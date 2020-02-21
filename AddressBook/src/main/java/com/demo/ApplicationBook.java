@@ -9,12 +9,22 @@ import com.demo.action.DisplayMenuAction;
 import com.demo.action.EnterAddressAction;
 import com.demo.action.FindAddressAction;
 import com.demo.action.SaveBookAction;
-
+/**
+ * 
+ * @author adminpc12
+ * @version 1.0 
+ * @since  2020/02/20
+ */
 public class ApplicationBook {
 	
 	ArrayList<Address> Book = new ArrayList<Address>();
+	/**
+	 * run the whole Application and call execute method of DisplayMenuAction Class
+	 */
 	public void run() {
-		
+		/**
+		 * This is the entry point of the AddressBook
+		 */
 		
 		Menu mobj = new Menu("Address Book Application");
 		
@@ -31,7 +41,10 @@ public class ApplicationBook {
 		new DisplayMenuAction(mobj).execute();
 
 	}
-
+/**
+ * main method 
+ * @param args commandLine  arguments for main method 
+ */
 	public static void main(String[] args) {
 		
 		ApplicationBook Abook = new ApplicationBook();
